@@ -31,3 +31,12 @@ fetch("http://localhost:3000/usuarios/1",{
 
 //delete
 fetch("http://localhost:3000/usuarios/1",{method:"DELETE"})
+
+Los componente de React son funciones 
+
+extension
+advanced-new-file
+ctrl alt n
+
+https://jsonplaceholder.typicode.com/users
+
