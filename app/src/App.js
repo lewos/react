@@ -8,8 +8,11 @@ export default class App extends React.Component{
     constructor(){
         super()
         this.state={
-            usuarios:[]
+            usuarios:[],
+            eliminarUsuario : this.eliminarUsuario
         }
+        // bind el this de App al this de eliminar usuario o podes usar la funcion eliminarUsuarioSinBind
+        //this.eliminarUsuario = this.eliminarUsuario.bind(this)
     }
 
     componentDidMount(){
@@ -20,11 +23,40 @@ export default class App extends React.Component{
         })
     }
 
+    eliminarUsuarioConBind(indice){
+        console.log(`Eliminando...`+  indice)
+        this.setState()
+    }
+
+    eliminarUsuario = (indice) => {
+        console.log(`Eliminando...`+  indice)
+        
+        //delete de la base
+        fetch(`http://localhost:3000/usuarios/${this.state.usuarios[indice].id}`,{
+            method : "DELETE"
+        })
+        .then((response) => {
+            if (response.status === 200){
+                // let nuevosUsuarios = []
+                // nuevosUsuarios.push(...this.state.usuarios.slice(0,indice))
+                // nuevosUsuarios.push(...this.state.usuarios.slice(indice+1))
+                // // console.log(nuevosUsuarios)
+                // this.setState({usuarios : nuevosUsuarios })
+                // o
+                this.setState({usuarios :[
+                    ...this.state.usuarios.slice(0,indice),
+                    ...this.state.usuarios.slice(indice+1)
+                ]})
+            }
+        })        
+    }
+
+
     render(){
         return(
             <Provider value={this.state}>
                 <Header/>
-                <Main usuarios="Horacio"/>
+                <Main/>
                 <Footer/>
             </Provider>
         )

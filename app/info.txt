@@ -43,4 +43,13 @@ https://jsonplaceholder.typicode.com/users
 
 06/11/2019
 
-asdffffffffffffffffffff
+routes
+npm i react-router-dom
+
+https://www.lanacion.com.ar/lifestyle/vivir-munich-aca-incluso-sueldo-mas-basico-nid2302462
+https://medium.com/google-design/how-to-use-material-data-tables-on-the-web-b12e881119a4
+https://material.io/collections/developer-tutorials/#flutter
+https://codelabs.developers.google.com/codelabs/mdc-101-flutter/#0
+https://material.io/collections/machine-learning/patterns-for-machine-learning-powered-features.html
+
+
