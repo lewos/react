@@ -51,5 +51,7 @@ https://medium.com/google-design/how-to-use-material-data-tables-on-the-web-b12e
 https://material.io/collections/developer-tutorials/#flutter
 https://codelabs.developers.google.com/codelabs/mdc-101-flutter/#0
 https://material.io/collections/machine-learning/patterns-for-machine-learning-powered-features.html
+https://material-ui.com/es/components/tables/
 
 
+https://github.com/HoracioGutierrez/react-avanzado-accenture
